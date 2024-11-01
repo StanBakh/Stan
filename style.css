@@ -1,0 +1,14 @@
+/* 1. Use a more-intuitive box-sizing model */
+
+
+
+
+body{background-color: 747474px;;}
+
+
+#page-wrapper{
+    border: 1px solid green;
+    width: 80%;
+    margin: 0px auto;
+}
+header{}
