@@ -3,12 +3,137 @@
 
 
 
-body{background-color: 747474px;;}
+body {
+    background-color: #8EB9D4;
+}
 
-
-#page-wrapper{
+#page-wrapper {
     border: 1px solid green;
     width: 80%;
     margin: 0px auto;
 }
-header{}
+
+header {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li {
+    display: inline;
+    margin: 0px auto;
+    padding: 10px 24px;
+}
+
+.main-content, .my-works-header, .card-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 120px 60px 120px;
+    box-sizing: border-box;
+}
+
+.contact-button, .get-in-touch-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.contact-button:hover, .get-in-touch-button:hover {
+    background-color: #ddd;
+}
+
+.card-image {
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#row {
+    display: flex;
+    margin-left: auto;
+    padding: 0px 13px 0px 0px;
+    justify-content: space-between;
+    position: unset;
+}
+
+@media (max-width: 768px) {
+    .main-content, .my-works-header {
+        padding: 20px 40px;
+        gap: 40px;
+    }
+
+    .card-image {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu ul li {
+        display: block;
+        padding: 8px 16px;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s ease;  /* For hover effect */
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    display: block;  /* Removes extra space below the image */
+}
+
+.card-text {
+    margin-top: 10px;
+}
+
+.project-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card:hover {
+    transform: scale(1.05);  /* Slightly enlarge card on hover */
+}
+
+.card:hover .project-name {
+    color: #007BFF;  /* Change project name color on hover */
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;  /* Cards take full width on small screens */
+    }
+
+    .project-name {
+        font-size: 1rem;  /* Adjust font size for mobile */
+    }
+}
